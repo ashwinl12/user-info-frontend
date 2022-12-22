@@ -16,7 +16,7 @@ function Posts() {
     }
 
     useEffect(()=> {
-        Axios.get("http://localhost:3005/posts").then((response)=>{
+        Axios.get("https://user-info-api.onrender.com/posts").then((response)=>{
             setUserData(response.data)
             console.log(userData)
         })

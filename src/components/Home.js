@@ -36,7 +36,7 @@ function Home() {
       e.preventDefault();
       setFormErrors(validate(formValues));
       if(Object.keys(formErrors).length===0) {
-        Axios.post("http://localhost:3005/submit", formValues).then((response)=>{
+        Axios.post("https://user-info-api.onrender.com/submit", formValues).then((response)=>{
 
           if(response.data.error) {
             setFormErrors(formErrors=>({
