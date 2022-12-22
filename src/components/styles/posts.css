@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.myContainer {
+    padding: 15px 9%;
+    padding-bottom: 100px;
+    background: linear-gradient(135.9deg, rgb(109, 25, 252) 16.4%, rgb(125, 31, 165) 56.1%);
+}
+
+
+.myContainer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.home {
+    transition: transform .2s;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.home:hover {
+    color: #555;
+    transform: scale(0.9);
+}
